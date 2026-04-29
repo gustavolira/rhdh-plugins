@@ -1,5 +1,13 @@
 ## @red-hat-developer-hub/backstage-plugin-lightspeed
 
+## 2.5.1
+
+### Patch Changes
+
+- d621f93: Improved notebook upload modal and MessageBar UX.
+- d621f93: Fixed overwrite flow to add duplicate files to the Add Document modal instead of uploading immediately. Reduced notebook delete toast timeout to 2 seconds.
+  - @red-hat-developer-hub/backstage-plugin-lightspeed-common@2.5.1
+
 ## 2.5.0
 
 ### Minor Changes
