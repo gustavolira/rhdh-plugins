@@ -23,14 +23,13 @@
   "engines": {
     "node": "22 || 24"
   },
-  "main": "dist/install-dynamic-plugins.cjs",
+  "main": "dist/index.cjs.js",
   "bin": {
     "install-dynamic-plugins": "bin/install-dynamic-plugins"
   },
   "files": [
     "bin",
-    "dist/install-dynamic-plugins.cjs",
-    "install-dynamic-plugins.sh",
+    "dist/**/*.js",
     "README.md"
   ],
   "publishConfig": {
@@ -38,8 +37,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "node esbuild.config.mjs",
-    "prepack": "node esbuild.config.mjs",
+    "build": "backstage-cli package build",
     "tsc": "tsc",
     "test": "backstage-cli package test",
     "lint": "backstage-cli package lint",
@@ -56,7 +54,6 @@
     "@types/jest": "^30.0.0",
     "@types/node": "^22.10.0",
     "@types/tar": "^6.1.13",
-    "esbuild": "^0.25.0",
     "typescript": "~5.8.0"
   }
 }

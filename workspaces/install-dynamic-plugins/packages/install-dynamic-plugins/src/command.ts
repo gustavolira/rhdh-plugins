@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import type { CliCommandContext } from '@backstage/cli-node';
-import { main } from './index';
+import { main } from './installer';
 
 export default async ({ args, info }: CliCommandContext): Promise<void> => {
   await main(args, info.usage);
